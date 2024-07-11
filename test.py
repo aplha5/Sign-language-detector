@@ -106,14 +106,20 @@ while True:
 
     # Display the predicted sentence on the screen
     # Adjust font size dynamically based on the length of predicted_sentence
-    font_size = 1
+    font_size = 1.0
     thickness = 2
-    while True:
-        text_size = cv2.getTextSize(f'Sentence: {predicted_sentence}', cv2.FONT_HERSHEY_SIMPLEX, font_size, thickness)[0]
-        if text_size[0] < W - 20:  # Check if text width fits within the frame
-            break
+    text_size = cv2.getTextSize(f'Sentence: {predicted_sentence}', cv2.FONT_HERSHEY_SIMPLEX, font_size, thickness)[0]
+    
+    while text_size[0] > (W - 20):
         font_size -= 0.1
+        if font_size < 0.5:  # Ensure font size doesn't go below a minimum threshold
+            font_size = 0.5
+            break
         thickness -= 1
+        if thickness < 1:  # Ensure thickness doesn't go below a minimum threshold
+            thickness = 1
+            break
+        text_size = cv2.getTextSize(f'Sentence: {predicted_sentence}', cv2.FONT_HERSHEY_SIMPLEX, font_size, thickness)[0]
 
     cv2.putText(masked_hand, f'Sentence: {predicted_sentence}', (10, 30), cv2.FONT_HERSHEY_SIMPLEX, font_size, (0, 0, 255), thickness, cv2.LINE_AA)
 
