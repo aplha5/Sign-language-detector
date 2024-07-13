@@ -6,8 +6,7 @@ import cv2
 DATA_DIR = './data'
 if not os.path.exists(DATA_DIR):
     os.makedirs(DATA_DIR)
-
-number_of_classes = 1
+number_of_classes = 27
 dataset_size = 100
 
 cap = cv2.VideoCapture(0)
@@ -16,8 +15,6 @@ for j in range(number_of_classes):
         os.makedirs(os.path.join(DATA_DIR, str(j)))
 
     print('Collecting data for class {}'.format(j))
-
-    done = False
     while True:
         ret, frame = cap.read()
         if not ret:
