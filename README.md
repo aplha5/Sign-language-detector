@@ -1,1 +1,1 @@
-# Sign-language-detector
+# Sign-language to text and speech convertor
