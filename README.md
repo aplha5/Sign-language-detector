@@ -4,7 +4,14 @@ Sign language is an essential tool for the deaf and dumb community to communicat
 
 The result of the project is 
 
+https://github.com/user-attachments/assets/f78ab689-af63-4a6e-bf56-66ef77eb3c14
+
+
 ### Inroduction
 Sign language is a crucial tool for individuals who are deaf and dumb, allowing them to communicate effectively through hand signs since they cannot speak. Communication involves the exchange of messages, which can be done through signals, speech, or text. For those who are deaf and dumb, sign language simplifies communication. However, not everyone understands sign language. To bridge this gap, I developed a system that can detect hand signs representing letters, convert these signs into text, and subsequently transform the text into speech. This makes communication more accessible and seamless for individuals with hearing and speech disabilities.
 The below attached photo consists of the Aplhabet sign Language
 ![Screenshot (57)](https://github.com/user-attachments/assets/a04267ea-f89b-4219-9f41-bb3d873eb4b9)
+and open plam for spaces as shown in the video.
+
+### Instalation
+
