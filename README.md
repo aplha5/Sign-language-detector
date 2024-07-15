@@ -13,5 +13,15 @@ The below attached photo consists of the Aplhabet sign Language
 ![Screenshot (57)](https://github.com/user-attachments/assets/a04267ea-f89b-4219-9f41-bb3d873eb4b9)
 and open plam for spaces as shown in the video.
 
-### Instalation
+### Installation
+You can clone this project into the visual studio code 
+and then you have to run the test.py file then you can will get the screen where you can show the signs and that will be converted to sentence
 
+
+This software can be used not only for recognizing individual letter signs but also for gestures like "thank you" and "hello". To use it for additional gestures, follow these steps:
+
+Collect Data: Run the data collection script to capture and store the new hand signs in the data directory. Adjust the number of classes to match the number of gestures you want to include.
+Process Data: Execute the create_data script to process the collected data.
+Train Model: Use the train.py script to train the model with the processed data.
+Update Label Dictionary: Modify the label dictionary to reflect the new gestures. For example, if the gesture for "hi" is stored in class 0, update the dictionary entry from 0: 'A' to 0: 'hi'.
+By following these steps, you can extend the software to recognize and convert a variety of hand signs into text and speech.
