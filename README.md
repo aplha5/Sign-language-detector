@@ -12,7 +12,7 @@ Sign language is a crucial tool for individuals who are deaf and dumb, allowing 
 The below attached photo consists of the Aplhabet sign Language
 
 ![Screenshot (57)](https://github.com/user-attachments/assets/a04267ea-f89b-4219-9f41-bb3d873eb4b9)
-and open plam for spaces as shown in the video.
+and open full plam for spaces as shown in the video.
 
 ### Installation
 You can clone this project into the visual studio code 
