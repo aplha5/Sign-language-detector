@@ -15,19 +15,27 @@ The below attached photo consists of the Aplhabet sign Language
 and open full plam for spaces as shown in the video.
 
 ### Installation
-You can clone this project into the visual studio code 
-and then you have to run the test.py file then you can will get the screen where you can show the signs and that will be converted to sentence after getting the screen you can use it got get sentences by showing signs and if you want to clear thescreen you can press 'c' and if you want the sentnce you can press 's' and if you want to quit from the program you can click 'q'.
-
-
+To clone and get into the directory of this project in Visual Studio Code, open the terminal  and run the commands 
+```sh
+git clone https://github.com/aplha5/Sign-language-detector.git.
+cd Sign-language-detector
+```
+After cloning, execute the test.py file. This will open a screen where you can display hand signs, which will be converted into sentences. On this screen, you can:
+```sh
+Press 'c' to clear the screen
+Press 's' to covert the sentence into speech
+Press 'q' to quit the program
+This setup allows you to easily convert hand signs into text and speech.
+```
 This software can be used not only for recognizing individual letter signs but also for gestures like "thank you" and "hello". To use it for additional gestures, follow these steps:
 
-Collect Data: Run the data collection script to capture and store the new hand signs in the data directory. Adjust the number of classes to match the number of gestures you want to include.
+**Collect Data**: Run the data collection script to capture and store the new hand signs in the data directory. Adjust the number of classes to match the number of gestures you want to include.
 
 ![Screenshot (59)](https://github.com/user-attachments/assets/aa60c171-3e03-416a-8269-c8316d86ebe9)
 
-Process Data: Execute the create_data script to process the collected data.
-Train Model: Use the train.py script to train the model with the processed data.
-Update Label Dictionary in test file: Modify the label dictionary to reflect the new gestures. For example, if the gesture for "hi" is stored in class 0, update the dictionary entry from 0: 'A' to 0: 'hi'.
+**Process Data**: Execute the create_data script to process the collected data.
+**Train Model**: Use the train.py script to train the model with the processed data.
+**Update Label Dictionary in test file**: Modify the label dictionary to reflect the new gestures. For example, if the gesture for "hi" is stored in class 0, update the dictionary entry from 0: 'A' to 0: 'hi'.
 
 ![Screenshot (60)](https://github.com/user-attachments/assets/9e2f640d-23bf-4ef0-923d-654fb4c0d013)
 
