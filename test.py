@@ -5,7 +5,15 @@ import numpy as np
 import time
 import pyttsx3  # TTS library
 
-model_dict = pickle.load(open('./model.p', 'rb'))
+import os
+
+
+# Get the directory of the current script
+script_dir = os.path.dirname(os.path.abspath(__file__))
+model_path = os.path.join(script_dir, 'model.p')
+
+model_dict = pickle.load(open(model_path, 'rb'))
+
 model = model_dict['model']
 
 cap = cv2.VideoCapture(0)

@@ -5,8 +5,13 @@ from sklearn.model_selection import train_test_split
 from sklearn.metrics import accuracy_score
 import numpy as np
 
+import os
 
-data_dict = pickle.load(open('./data.pickle', 'rb'))
+
+# Get the directory of the current script
+script_dir = os.path.dirname(os.path.abspath(__file__))
+model_path = os.path.join(script_dir, 'data.pickle')
+data_dict = pickle.load(open(model_path, 'rb'))
 
 max_length = max(len(item) for item in data_dict['data'])
 data = np.array([np.pad(item, (0, max_length - len(item)), mode='constant') for item in data_dict['data']])
